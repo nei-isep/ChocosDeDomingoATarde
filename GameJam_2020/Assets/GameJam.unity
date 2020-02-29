@@ -138,13 +138,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 190807890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfec5eb328066e54baa3ca046b882370, type: 3}
+  m_Script: {fileID: 11500000, guid: 334ef5519144d0e438a932a03abdacc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rows: 5
-  columns: 5
+  mazeRows: 20
+  mazeColumns: 10
   wall: {fileID: 4918445746779596949, guid: 297101dc54bb3b845a830154ea556b64, type: 3}
-  size: 2
+  size: 5
 --- !u!4 &190807892
 Transform:
   m_ObjectHideFlags: 0
