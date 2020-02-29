@@ -9,8 +9,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
-        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * speed, 0f, Input.GetAxis("Vertical") * speed * Time.deltaTime);
+        float deltaX = Input.GetAxis("Horizontal") * speed;
+        float deltaZ = Input.GetAxis("Vertical") * speed;
+        Vector3 movement = new Vector3(deltaX, 0, deltaZ);
+        movement = Vector3.ClampMagnitude(movement, speed);
+        movement *= Time.deltaTime;
+        transform.Translate(movement);
     }
 
 }
