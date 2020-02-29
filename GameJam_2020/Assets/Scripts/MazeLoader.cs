@@ -4,6 +4,7 @@ using System.Collections;
 public class MazeLoader : MonoBehaviour {
 	public int mazeRows, mazeColumns;
 	public GameObject wall;
+    public GameObject floor;
 	public float size = 2f;
 
 	private MazeCell[,] mazeCells;
@@ -29,7 +30,7 @@ public class MazeLoader : MonoBehaviour {
 				mazeCells [r, c] = new MazeCell ();
 
 				// For now, use the same wall object for the floor!
-				mazeCells [r, c] .floor = Instantiate (wall, new Vector3 (r*size, -(size/2f), c*size), Quaternion.identity) as GameObject;
+				mazeCells [r, c] .floor = Instantiate (floor, new Vector3 (r*size, -(size/2f), c*size), Quaternion.identity) as GameObject;
 				mazeCells [r, c] .floor.name = "Floor " + r + "," + c;
 				mazeCells [r, c] .floor.transform.Rotate (Vector3.right, 90f);
 
