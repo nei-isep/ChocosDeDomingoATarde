@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerSpawner.cs" />
     <Compile Include="Assets\Scripts\ProceduralNumberGenerator.cs" />
+    <Compile Include="Assets\Scripts\TextTime.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/rhael/Documents/ChocosDeDomingoATarde/GameJam_2020/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
