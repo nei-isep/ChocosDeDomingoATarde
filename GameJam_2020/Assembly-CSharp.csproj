@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ProceduralNumberGenerator.cs" />
+    <Compile Include="Assets\Scripts\ClickBehaviour.cs" />
     <Compile Include="Assets\Scripts\EndPointBehaviour.cs" />
     <Compile Include="Assets\Scripts\HuntAndKillMazeAlgorithm.cs" />
     <Compile Include="Assets\Scripts\MazeAlgorithm.cs" />
@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\MazeLoader.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerSpawner.cs" />
+    <Compile Include="Assets\Scripts\ProceduralNumberGenerator.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Repos/GameJam2020/GameJam_2020/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
