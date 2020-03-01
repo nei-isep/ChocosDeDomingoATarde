@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class TextTime : MonoBehaviour
 {
-    float playTime = 120f;
+    public float playTime;
     public Text textBox;
 
     // Update is called once per frame
