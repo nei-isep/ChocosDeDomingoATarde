@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TextTime : MonoBehaviour
@@ -11,5 +12,9 @@ public class TextTime : MonoBehaviour
     {
         playTime -= Time.deltaTime;
         textBox.text = Mathf.RoundToInt(playTime).ToString();
+        if ( playTime <= 0 )
+        {
+            SceneManager.LoadScene(6);
+        }
     }
 }

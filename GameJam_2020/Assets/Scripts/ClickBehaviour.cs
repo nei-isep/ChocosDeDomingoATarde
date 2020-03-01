@@ -7,7 +7,9 @@ public class ClickBehaviour : MonoBehaviour
 {
 
     public GameObject spotlight;
+    public GameObject timer;
     public static int noSpotlights = 0;
+    public int timeDamage = 2;
     public static DateTime lastSpotlightTime = DateTime.MinValue;
 
     // Start is called before the first frame update
@@ -49,6 +51,8 @@ public class ClickBehaviour : MonoBehaviour
         v3 = Camera.main.ScreenToWorldPoint(v3);
         lightGameObject.transform.position = new Vector3(v3.x, 35, v3.z);
         lightGameObject.transform.eulerAngles = new Vector3(90, 0, 0);
+
+        timer.GetComponent<TextTime>().playTime -= timeDamage;
 
         yield return new WaitForSeconds(2f);
 

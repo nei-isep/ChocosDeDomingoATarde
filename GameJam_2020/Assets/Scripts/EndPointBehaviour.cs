@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class EndPointBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
+
+
     void Start()
     {
         
@@ -21,7 +23,7 @@ public class EndPointBehaviour : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         }
     }
