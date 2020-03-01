@@ -45,3 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotlight: {fileID: 438165968134436561, guid: 0b408d383c63d7b4fbf18b2545616d68,
     type: 3}
+  timer: {fileID: 0}
+  timeDamage: 2
+  spotlightTurningOn: {fileID: 8004887075871407468, guid: 719d9362ac8a3a84abd4dbc92ba027ce,
+    type: 3}

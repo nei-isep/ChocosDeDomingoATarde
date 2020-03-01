@@ -11,6 +11,7 @@ public class ClickBehaviour : MonoBehaviour
     public static int noSpotlights = 0;
     public int timeDamage = 2;
     public static DateTime lastSpotlightTime = DateTime.MinValue;
+    //public AudioSource spotlightTurningOn;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +26,8 @@ public class ClickBehaviour : MonoBehaviour
         {
             lastSpotlightTime = DateTime.Now;
             noSpotlights++;
+            //spotlightTurningOn.Play();
             StartCoroutine(CreateSpotlight());
-
         }
     }
 
